@@ -1,0 +1,13 @@
+span {
+    display: flex;
+    justify-content: center;
+}
+button {
+    color: green;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    margin-right: 20px;
+
+    
+}
