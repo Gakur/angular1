@@ -1,0 +1,20 @@
+<span>
+    <button (click) = "getImagesFromAPI()"> Show Images</button>
+</span>
+
+<div class="col-lg-3 col-md-6 col-sm-6 col">
+    <div class="card">
+    </div>
+    <div class="container">
+        <li *ngFor="let image of images">
+            <div>
+                <li> {{image.albumId}}</li>
+                <li> {{image.id}}</li>
+                <li> {{image.title}}</li>
+                <li>
+                    <img src="{{image.url}}" alt="">
+                 </li>
+            </div>
+        </li>        
+    </div>
+</div>

@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HomeTextComponent } from './home-text/home-text.component';
 import { HomeButtonComponent } from './home-button/home-button.component';
+import { MovieComponent } from './movie/movie.component';
+import { HttpClientModule }  from '@angular/common/http';
+import { MovieServiceService } from './services/movie-service.service';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,14 @@ import { HomeButtonComponent } from './home-button/home-button.component';
     HomepageComponent,
     HomeTextComponent,
     HomeButtonComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MovieServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

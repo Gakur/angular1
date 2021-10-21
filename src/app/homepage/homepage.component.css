@@ -1,5 +1,6 @@
 div{
-    background: url(../../assets/Images/photo2.jpeg) no-repeat;
+    /* background: url(../../assets/Images/photo0.jpg) no-repeat; */
+    background-color: #000;
     background-size: cover;
     height: 100vh;
     display: flex;
