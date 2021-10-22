@@ -13,5 +13,6 @@ export class MovieServiceService {
     const url = "https://jsonplaceholder.typicode.com/photos"
     return this.http.get<any>(url)
   }
+  
 }
   

@@ -10,14 +10,14 @@ import { MovieServiceService } from '../services/movie-service.service';
 export class MovieComponent implements OnInit {
   movies!: any[];
 
-  images: Array<any>
+  images!: any []
 
   constructor(private services: MovieServiceService) {
     this.images = new Array<any>()
 
   }
   getImagesFromAPI() {
-    this.services.getImages().subscribe((images) => {
+    this.services.getImages().subscribe(images => {
       console.log(images)
       this.images = images
     })
